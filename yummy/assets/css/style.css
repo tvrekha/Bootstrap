@@ -1,0 +1,12 @@
+.navbar-brand h4{
+    font-weight: bolder !important; 
+}
+a{
+    font-weight: bold !important;
+}
+.home{
+    border-bottom: 3px solid red;
+}
+.btn{
+    border-radius: 20px !important;
+}
