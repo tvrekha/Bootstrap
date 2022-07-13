@@ -7,6 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
@@ -18,10 +21,11 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
-                <ul class="navbar-nav me-auto ms-auto my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <ul class="navbar-nav mx-auto">
+                <!--<ul class="navbar-nav mx-auto navbar-nav-scroll" style="--bs-scroll-height: 100px;">-->
                     <li class="nav-item">
                         <a class="nav-link active p-lg-2" aria-current="page" href="#">
-                            <div class="home"> Home</div> 
+                            <div class="home"><span class="border-bottom border-danger border-2">Home</span></div> 
                         </a>
                     </li>
                     <li class="nav-item">
@@ -53,28 +57,34 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">contact</a>
                     </li>
+                         
                 </ul>
-                <button class="btn btn-danger" type="submit">Book a Table</button>
+                <form class="d-flex">
+                    <button class="btn btn-danger" type="submit">Book a Table</button>
+                  </form>
             </div>
         </div>
     </nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <div class="main-con1">Enjoy You Healthy <br> Delicious Food</div>
-                <div class="sub-con1">
-                    Sed autem laudantium dolores.Voluptatem itaque ea consequatur eveniet.Eum quas beatae cumque eum quaerat.
+    <section class="back-color mt-4 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 my-auto px-2">
+                    <div class="main-con1">Enjoy You Healthy <br> Delicious Food</div>
+                    <div class="sub-con1 mt-4">
+                        Sed autem laudantium dolores.Voluptatem itaque ea consequatur eveniet.Eum quas beatae cumque eum quaerat.
+                    </div>
+                    <div class="sub-con2 mt-4 d-lg-flex d-block">
+                        <button class="btn btn-danger me-3 btn1">Book a Table</button>
+                        <a href="#" class=" video1 text-decoration-none text-dark "><i class="bi bi-play-circle me-2 my-auto text-danger" style="font-size: 23px;"></i>Watch Video</a>
+                    </div>
                 </div>
-                <div class="sub-con2">
-                    <div class="btn">Book a Table</div>
-                    <a href="#">Watch Video</a>
+                <div class="col-lg-6 ms-auto my-5">
+                    <img src="assets/img/hero-img.png" alt="hero-img" class="img-fluid">
                 </div>
-            </div>
-            <div class="col-6">
-                <img src="assets/img/hero-img.png" alt="hero-img" class="img-thumbnail">
             </div>
         </div>
-    </div>
+    </section>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
