@@ -48,9 +48,8 @@ a{
 }
 .book-con{
     background-color: white;
-    margin-bottom:5%;
-    margin: 0px 9%;
-    padding: 2% 10%;
+    margin-top: 400px;
+    padding: 20px 150px;
     text-align: center;
     font-weight: bold;
 }
@@ -62,4 +61,34 @@ a{
     flex-direction: row;
     align-items: start;
     align-self: stretch;
+}
+.more-btn{
+    background-color: #ffffff4d !important;
+    align-self: center;
+    justify-content: center;
+}
+.card11{
+    padding: 10px;
+    background-color: #af72724d  !important;
+    justify-content: center;
+}
+h5.card-title{
+    text-align: center;
+}
+.card-con{
+    text-align: center;
+}
+.back-img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back-img i{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*top: 50%;*/
+    
 }
