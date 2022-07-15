@@ -68,7 +68,7 @@ a{
     justify-content: center;
 }
 .card11{
-    padding: 10px;
+    padding: 5px;
     background-color: #af72724d  !important;
     justify-content: center;
 }
@@ -89,6 +89,28 @@ h5.card-title{
     display: flex;
     align-items: center;
     justify-content: center;
-    /*top: 50%;*/
+}
+.our-menu{
+    margin-top: 200px;
+    font-weight:lighter;
+}
+.menu-con1{
+    font-family: 'Amatic SC', cursive !important;
+    font-size: 30px;
     
+}
+.menu-con2{
+    color: rgb(255, 0, 0);
+}
+.event1{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start; 
+}
+.event1 .event-con{
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
 }
