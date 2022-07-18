@@ -13,37 +13,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand text-black" href="#">
-                <h4>Yummy<span class="text-danger">.</span></h4>
+    <nav class="navbar navbar-expand-lg fixed-top bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand text-black" href="index.html">
+                <h1>Yummy<span class="text-danger">.</span></h1>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
+                    <li class="nav-item pe-4">
                         <a class="nav-link active p-lg-2" aria-current="page" href="#">
-                            <div class="home"><span class="border-bottom border-danger border-2">Home</span></div> 
+                            <div class="#home"><span class="border-bottom border-danger border-2">Home</span></div> 
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="#about">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Menu</a>
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="#menu">Menu</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Events</a>
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="#events">Events</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Chefs</a>
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="#chefs">Chefs</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Gallry</a>
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="#gallry">Gallry</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown pe-4">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Drop Dwon
                         </a>
@@ -54,31 +54,29 @@
                         <li><a class="dropdown-item" href="#">Action 4</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">contact</a>
-                    </li>
-                         
+                    <li class="nav-item pe-4">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>          
                 </ul>
-                <form class="d-flex">
-                    <button class="btn btn-danger" type="submit">Book a Table</button>
-                  </form>
+                <a class="btn btn-danger rounded-pill" href="#book-a-table" type="submit">Book a Table</a>
+               
             </div>
         </div>
-    </nav>
-    <section class="back-color py-5">
+    </nav>  
+    <section class="back-color hero" id="hero">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 my-auto px-2">
-                    <div class="main-con1">Enjoy You Healthy <br> Delicious Food</div>
-                    <div class="sub-con1 mt-4">
+                <div class="col-lg-5 my-auto px-5">
+                    <h2 class="main-con1">Enjoy You Healthy <br> Delicious Food</h2>
+                    <div class="sub-con1">
                         Sed autem laudantium dolores.Voluptatem itaque ea consequatur eveniet.Eum quas beatae cumque eum quaerat.
                     </div>
                     <div class="sub-con2 mt-4 d-lg-flex">
                         <div>
-                            <button class="btn btn-danger me-3 px-lg-5 rounded-pill ">Book a Table</button>
+                            <a class="btn btn-danger btn-book-a-table me-3 px-lg-5 rounded-pill ">Book a Table</a>
                         </div>
                         
-                        <a href="#" class=" video1 text-decoration-none text-dark "><i class="bi bi-play-circle me-2 my-auto text-danger"></i>Watch Video</a>
+                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="btn-watch-video video1 text-decoration-none text-dark "><i class="bi bi-play-circle me-2 my-auto text-danger"></i>Watch Video</a>
                     </div>
                 </div>
                 <div class="col-lg-6 ms-auto my-5">
@@ -87,65 +85,50 @@
             </div>
         </div>
     </section>
-    <section class="mt-5  mb-3">
+    <section class="mt-5  mb-3" id="about">
         <div class="container">
-            <div class="row">
+            <div class="row gy-4">
                 <div class="col-lg-12 about">
-                    <div class="about-con">ABOUT US</div>
+                    <h2 class="about-con">ABOUT US</h2>
                     <div class="learn-about">LEARN MORE <span class="about-us">ABOUT US</span></div>
                 </div>
             </div> 
         </div>
     </section>
-    <section class="mt-2 my-5">
+    <section class="book-main">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 mx-auto about-img">
-                    <div class="bg-image d-flex justify-content-center align-items-center mt-5">
-                        <p class="book-con">
-                            Book a Table <br> <span class="book-no text-danger">+1 5589 5548855</span> 
-                        </p>
-                    </div>
+                <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/about.jpg) ;">
+                    <div class="book-con position-absolute">
+                        <h4>Book a Table</h4>  
+                        <p class="text-danger">+1 5589 5548855</p>
+                     </div>    
                 </div>
-                <div class="col-lg-5">
-                    <p class="fst-italic">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
-                    </p>
-                   <div class="right-con">
-                        <i class="bi bi-check2-all text-danger me-2"></i>
-                        <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                <div class="col-lg-5 d-flex align-items-end">
+                    <div class="content ps-0 ps-lg-5">
+                        <p class="fst-italic">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua.
                         </p>
-                   </div>
-                   <div class="right-con">
-                    <i class="bi bi-check2-all text-danger me-2"></i>
-                    <p>
-                        Duis aute irure dolor in reprehenderit in voluptate velit. 
-                    </p>
-                    </div>
-                    <div class="right-con">
-                        <i class="bi bi-check2-all text-danger me-2"></i>
+                        <ul>
+                            <li><i class="bi bi-check2-all text-danger"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                            <li><i class="bi bi-check2-all text-danger"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                            <li><i class="bi bi-check2-all text-danger"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                        </ul>
                         <p>
-                            Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate trideta 
-                            storacalaperda mastiro dolore eu fugiat nulla pariatur. 
-                        </p>
-                    </div>
-                    <p>
-                        Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolor eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident
-                    </p>
-                    <div class="back-img my-auto">
-                        <img src="assets/img/about-2.jpg" class="img-fluid">
-                        <i class="bi bi-play-circle-fill text-danger rounded-circle card11"></i>
-                    </div>    
+                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+                        </p>  
+                        <div class="position-relative mt-4">
+                            <img src="assets/img/about-2.jpg" class="img-fluid" alt="">
+                            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
+                        </div>          
+                    </div>  
                 </div>
             </div>  
         </div>
     </section>
-    <section class="back-color py-4 mx-auto">
+    <section class="back-color py-4 mx-auto" id="why-us">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
@@ -158,29 +141,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-lg-4 my-5">
-                            <div class="card h-100">
-                                <div class="card-body px-2">
-                                  <i class="bi bi-clipboard-data text-danger mx-5 d-flex rounded-circle my-3 card11"></i>
+                <div class="col-lg-8 d-flex align-items-center">
+                    <div class="row gy-4">
+                        <div class="col-lg-4">
+                            <div class="card h-100 card-animation">
+                                <div class="card-body px-3">
+                                  <i class="bi bi-clipboard-data text-danger mx-auto d-flex rounded-circle my-3 card11"></i>
                                   <h5 class="card-title">corporis voluptates officia eiusmod</h5>
                                   <p class="card-text card-con">consequuntur sunt aut quasi enim aliqum quae harum pariatur laboris nisi ut aliquip</p>
                                 </div>
                               </div>
                         </div>
-                        <div class="col-lg-4 my-5">
-                            <div class="card h-100">
-                                <div class="card-body px-2">
-                                  <i class="bi bi-gem text-danger mx-5 d-flex rounded-circle card11 my-3"></i>
+                        <div class="col-lg-4">
+                            <div class="card h-100 card-animation">
+                                <div class="card-body px-3">
+                                  <i class="bi bi-gem text-danger mx-auto d-flex rounded-circle card11 my-3"></i>
                                   <h5 class="card-title">Ullamco laboris ladore pan</h5>
                                   <p class="card-text card-con">Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia deserunt</p>                        </div>
                               </div>
                         </div>
-                        <div class="col-lg-4 my-5">
-                            <div class="card h-100">
-                                <div class="card-body px-2">
-                                  <i class="bi bi-inboxes text-danger mx-5 d-flex rounded-circle my-3 card11"></i>
+                        <div class="col-lg-4">
+                            <div class="card h-100 card-animation">
+                                <div class="card-body px-3">
+                                  <i class="bi bi-inboxes text-danger mx-auto d-flex rounded-circle my-3 card11"></i>
                                   <h5 class="card-title">Labore consequatur incidid dolore</h5>
                                   <p class="card-text card-con">Aut suscipit aut cum nemo deleniti aut omnis.Doloribus ut maiores omnis facere</p>                      
                                 </div>
@@ -191,12 +174,12 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="menu">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p class="text-center our-menu">OUR MENU</p>
-                    <p class="text-center menu-con1">Check Our <span class="menu-con2">Yummy Menu</span> </p>
+                    <p class="text-center about-con mt-lg-5">OUR MENU</p>
+                    <p class="learn-about text-center">Check Our <span class="menu-con2">Yummy Menu</span> </p>
                 </div>
             </div>
         </div>
@@ -209,16 +192,24 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
                 <li class="nav-item">
-                    <a class="nav-link text-danger fw-normal" aria-current="page" href="#"> <span class="border-bottom border-danger border-2">Starters</span> </a>
+                    <a class="nav-link text-danger fw-normal" aria-current="page" href="#"> 
+                        <h4 class="menu-item"><span class="border-bottom border-danger border-2">Starters</span> </h4>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-normal" href="#"><span class="border-bottom border-2">Breakfast</span></a>
+                    <a class="nav-link fw-normal menu-item" href="#">
+                        <h4 class="menu-item"><span class="border-bottom border-2">Breakfast</span></h4>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-normal" href="#"><span class="border-bottom border-2">Lunch</span></a>
+                    <a class="nav-link fw-normal menu-item" href="#">
+                        <h4 class="menu-item"><span class="border-bottom border-2">Lunch</span></h4>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-normal" href="#"><span class="border-bottom border-2">Dinner</span></a>
+                    <a class="nav-link fw-normal menu-item" href="#">
+                        <h4 class="menu-item"><span class="border-bottom border-2">Dinner</span></h4>
+                    </a>
                 </li>
                 </ul>
             </div>
@@ -228,7 +219,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <div class="fw-normal">MENU</div>
+                    <div class="text-center about-con mt-lg-2">MENU</div>
                     <h3 class="text-danger">Starters</h3>
                 </div>
             </div>
@@ -300,54 +291,123 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="container-fluid bg-light">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-center fw-light mt-5">TESTIMONIALS</div>
-                    <div class="menu-con1 text-center">What Are They <span class="text-danger">Saying About Us</span></div>
-                </div>
-                <div class="col-lg-7 px-lg-5 my-lg-5">
-                    <div class="border-start border-danger border-3 mx-3">
-                        <div class="px-5">
-                            <p class="fst-italic">
-                                <i class="bi bi-quote text-danger"></i>
-                                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit
-                                fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                                <i class="bi bi-quote text-danger"></i>
-                            </p>
-                        </div>
-                        <h4 class="fw-bold px-5">Sara Wilsson</h4>
-                        <p class="px-5">Designer</p>
-                        <div class="px-5">
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>
-                            <i class="bi bi-star-fill text-warning"></i>    
-                        </div>    
-                    </div>
-                </div>    
-                <div class="col-lg-5 my-auto">
-                    <img src="assets/img/testimonials/testimonials-2.jpg" class="rounded-circle img-fluid w-50 ">
-                </div>
-                <div class="col-lg-12 text-center mb-5">
-                    <i class="bi bi-dot text-secondary"></i>
-                    <i class="bi bi-dot text-danger"></i>
-                    <i class="bi bi-dot text-secondary"></i>
-                    <i class="bi bi-dot text-secondary"></i>
-                </div>
+    <section id="testimonials" class="testimonials">
+        <div class="container bg-light">
+            <div class="section-header mt-lg-5">
+                <h2 class="text-center about-con ">TESTIMONIALS</h2>
+                <p class="learn-about text-center">What Are They <span class="text-danger">Saying About Us</span></p>
             </div>
+            <div class="slides-1 swiper">
+                <div class="swiper-wrapper">
+      
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="row gy-4 justify-content-center">
+                        <div class="col-lg-6">
+                          <div class="testimonial-content">
+                            <p>
+                              <i class="bi bi-quote quote-icon-left"></i>
+                              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                              <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                            <h3>Saul Goodman</h3>
+                            <h4>Ceo &amp; Founder</h4>
+                            <div class="stars">
+                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 text-center">
+                          <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="row gy-4 justify-content-center">
+                        <div class="col-lg-6">
+                          <div class="testimonial-content">
+                            <p>
+                              <i class="bi bi-quote quote-icon-left"></i>
+                              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                              <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                            <h3>Sara Wilsson</h3>
+                            <h4>Designer</h4>
+                            <div class="stars">
+                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 text-center">
+                          <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="row gy-4 justify-content-center">
+                        <div class="col-lg-6">
+                          <div class="testimonial-content">
+                            <p>
+                              <i class="bi bi-quote quote-icon-left"></i>
+                              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                              <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                            <h3>Jena Karlis</h3>
+                            <h4>Store Owner</h4>
+                            <div class="stars">
+                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 text-center">
+                          <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="swiper-slide">
+                    <div class="testimonial-item">
+                      <div class="row gy-4 justify-content-center">
+                        <div class="col-lg-6">
+                          <div class="testimonial-content">
+                            <p>
+                              <i class="bi bi-quote quote-icon-left"></i>
+                              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                              <i class="bi bi-quote quote-icon-right"></i>
+                            </p>
+                            <h3>John Larson</h3>
+                            <h4>Entrepreneur</h4>
+                            <div class="stars">
+                              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-2 text-center">
+                          <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
         </div>
     </section>
-    <section>
+    <section id="events">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 mt-5">
-                    <div class="text-center">
+                    <h2 class="text-center about-con">
                         EVENTS
-                    </div>
-                    <div class="text-center menu-con1 mb-3">Share <span class="text-danger">Your Moments</span>  In Our Reastaurant</div>    
+                    </h2>
+                    <p class="learn-about text-center mb-3">Share <span class="text-danger">Your Moments</span>  In Our Reastaurant</p>    
                 </div>
             </div>
         </div>     
@@ -356,7 +416,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-4 col-md-6 event1 mb-2">
-                    <img src="assets/img/events-2.jpg" class="img-fluid opacity-50">
+                    <img src="assets/img/events-2.jpg" class="img-fluid opacity-75">
                     <div class="event-con ms-3">
                         <div>
                             <h5 class="fw-bold text-white my-2">Private Parties</h5>
@@ -369,7 +429,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 event1 mb-2">
-                    <img src="assets/img/events-3.jpg" class="img-fluid opacity-50">
+                    <img src="assets/img/events-3.jpg" class="img-fluid opacity-75">
                     <div class="event-con ms-3">
                         <div>
                             <h5 class="fw-bold text-white my-2">Brithday Parties</h5>
@@ -382,7 +442,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 event1 mb-2">
-                    <img src="assets/img/events-1.jpg" class="img-fluid opacity-50">
+                    <img src="assets/img/events-1.jpg" class="img-fluid opacity-75">
                     <div class="event-con ms-3">
                         <div>
                             <h5 class="fw-bold text-white my-2">Custom Parties</h5>
@@ -402,20 +462,22 @@
             </div>
         </div>
     </section>
-    <section class="mb-5">
+    <section class="mb-5" id="chefs">
         <div class="container-fluid bg-light">
-            <div class="row">
+            <div class="row gy-4">
                 <div class="col-lg-12 mt-5 mb-3 text-center">
-                    <div>CHEFS</div>
-                    <div class="menu-con1">Our <span class="text-danger">Proffesional</span>Chefs </div>
+                    <h2 class="text-center about-con">CHEFS</h2>
+                    <p class="learn-about text-center mb-3">Our <span class="text-danger">Proffesional</span>Chefs </p>
                 </div>
-                <div class="col-lg-4 mb-2">
-                    <div class="card ms-5 h-100 ">
-                        <img class="card-img-top img-fluid" src="assets/img/chefs/chefs-1.jpg" alt="Card image cap">
+                <div class="col-lg-4 mb-5">
+                    <div class="card ms-5 h-100 card-animation border-0">
+                        <div class="chef-member">
+                            <img class="card-img-top img-fluid" src="assets/img/chefs/chefs-1.jpg" alt="Card image cap">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title fw-bold mt-5">Walter White</h5>
                             <p class="card-text">
-                                <p class="fw-light text-center ">Master Chef</p>  
+                                <p class="pb-2 text-center about-con">Master Chef</p>  
                                 <p class="fst-italic text-center">
                                     Velit out quia fugit et.Dolorum ea voluptate vel tempore tenetur ipsa quae out.
                                     Ipsum exercitationem iure minima enim corporis et voluptate.
@@ -424,13 +486,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-2">
-                    <div class="card h-100">
-                        <img class="card-img-top img-fluid" src="assets/img/chefs/chefs-2.jpg" alt="Card image cap">
+                <div class="col-lg-4 mb-5">
+                    <div class="card h-100 card-animation border-0">
+                        <div class="chef-member">
+                            <img class="card-img-top img-fluid" src="assets/img/chefs/chefs-2.jpg" alt="Card image cap">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Sarah Jhonson</h5>
                             <p class="card-text">
-                                <p class="fw-light text-center">Patissier</p>  
+                                <p class="pb-2 text-center about-con">Patissier</p>  
                                 <p class="fst-italic text-center">
                                     Quo esse repellends quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis.
                                     Voluptate sed quas reiciendis animi neque sapiente.
@@ -439,13 +503,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mb-2">
-                    <div class="card me-5 h-100">
-                        <img class="card-img-top img-fluid" src="assets/img/chefs/chefs-3.jpg" alt="Card image cap">
+                <div class="col-lg-4 mb-5">
+                    <div class="card me-5 h-100 card-animation border-0">
+                        <div class="chef-member">
+                            <img class="card-img-top img-fluid" src="assets/img/chefs/chefs-3.jpg" alt="Card image cap">
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title fw-bold mt-5">William Anderson</h5>
                             <p class="card-text">
-                                <p class="fw-light text-center">Cook</p>  
+                                <p class="pb-2 text-center about-con">Cook</p>  
                                 <p class="fst-italic text-center">
                                     vero omnis enim consequatur. voluptas consectetur unde qui molestiae deserunt.
                                     Voluptates enim out architecto porro aspernatur molestiae modi.
@@ -461,15 +527,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 mt-5">
-                    <div class="text-center">
-                        Book Table
-                    </div>
-                    <div class="text-center menu-con1 mb-3">Book <span class="text-danger">Your Stay</span>  With us </div>    
+                    <h2 class="text-center about-con">Book Table</h2>
+                    <p class="learn-about text-center mb-3">Book <span class="text-danger">Your Stay</span>  With us </p>    
                 </div>
             </div>
         </div>     
     </section>
-    <section class="my-5">
+    <section class="my-5" id="book-a-table">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 m-auto">
@@ -500,7 +564,7 @@
                                 <textarea id="message" class="form-control" rows="4" placeholder="Message" aria-label="Message"></textarea> 
                             </div>
                             <div class="col-lg-12 text-center rounded-pill mb-3">
-                                <button type="submit" class="btn btn-danger">Book a Table</button>
+                                <button type="submit" class="btn btn-danger rounded-pill">Book a Table</button>
                             </div>
                         </div>
                     </section>        
@@ -508,14 +572,14 @@
             </div>
         </div>
     </section>
-    <section class="my-5 bg-light ">
+    <section class="my-5 bg-light" id="gallry">
         <div class="container-fluid mx-3  ms-5 mb-4">
             <div class="row">
                 <div class="col-lg-12 mt-5">
-                    <div class="text-center">
+                    <h2 class="text-center about-con">
                         Gallry
-                    </div>
-                    <div class="text-center menu-con1 mb-3">Check <span class="text-danger">Our Gallry</span></div>    
+                    </h2>
+                    <p class="learn-about text-center mb-3">Check <span class="text-danger">Our Gallry</span></p>    
                 </div>
                 <div class="col-lg-2  my-auto mb-1">
                     <img src="assets/img/gallery/gallery-1.jpg" alt="gallery-1" class="img-fluid">
@@ -547,14 +611,14 @@
             </div>
         </div>     
     </section>
-    <section class="my-5">
+    <section class="my-5" id="contact">
         <div class="container-fluid mb-4">
             <div class="row">
                 <div class="col-lg-12 mt-5">
-                    <div class="text-center">
+                    <h2 class="text-center about-con">
                         Contact
-                    </div>
-                    <div class="text-center menu-con1 mb-3">Need Help? <span class="text-danger">Contact Us</span></div>    
+                    </h2>
+                    <p class="learn-about text-center mb-3">Need Help? <span class="text-danger">Contact Us</span></p>    
                 </div>
                 <div class="col-lg-8 mx-auto">
                     <img src="assets/img/googl_ED.jpg" alt="Location" class="img-fluid">
